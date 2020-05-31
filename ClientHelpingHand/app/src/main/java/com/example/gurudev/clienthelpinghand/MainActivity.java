@@ -51,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
                     InetAddress serverAddr =
                             InetAddress.getByName(serverIpAddress);
                     Socket socket  = new Socket(serverAddr, 10000);
-                    //Toast.makeText(MainActivity.this,"Connected to "+serverIpAddress ,Toast.LENGTH_LONG).show();
                     DataInputStream in = new
                             DataInputStream(socket.getInputStream());
                     String line = null;
