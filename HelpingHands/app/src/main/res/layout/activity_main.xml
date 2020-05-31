@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundpic"
+    tools:context="com.example.gurudev.helpinghands.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <ImageButton
+        android:id="@+id/contact"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginStart="74dp"
+        android:background="@drawable/contact"
+        app:layout_constraintBottom_toTopOf="@+id/medi"
+        app:layout_constraintEnd_toStartOf="@+id/entertainment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ip" />
+
+    <ImageButton
+        android:id="@+id/entertainment"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="92dp"
+        android:background="@drawable/entertainment"
+        app:layout_constraintBottom_toBottomOf="@+id/contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/contact"
+        app:layout_constraintTop_toTopOf="@+id/contact" />
+
+    <ImageButton
+        android:id="@+id/location"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="92dp"
+        android:background="@drawable/location"
+        app:layout_constraintBottom_toBottomOf="@+id/medi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/medi"
+        app:layout_constraintTop_toTopOf="@+id/medi" />
+
+    <ImageButton
+        android:id="@+id/medi"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="44dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginStart="74dp"
+        android:background="@drawable/medi"
+        app:layout_constraintBottom_toTopOf="@+id/msg"
+        app:layout_constraintEnd_toStartOf="@+id/location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contact" />
+
+    <ImageButton
+        android:id="@+id/msg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="137dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginStart="74dp"
+        android:background="@drawable/message"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medi" />
+
+    <ImageButton
+        android:id="@+id/sos"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="92dp"
+        android:background="@drawable/sos"
+        app:layout_constraintBottom_toBottomOf="@+id/msg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/msg"
+        app:layout_constraintTop_toTopOf="@+id/msg" />
+
+    <TextView
+        android:id="@+id/ip"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/contact"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="monospace"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ip"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
